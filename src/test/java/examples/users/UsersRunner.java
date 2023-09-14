@@ -11,7 +11,7 @@ class UsersRunner {
     }
     @Karate.Test
     Karate testWithTags(){
-        return Karate.run("exampleGetRequest").tags("@getRequest1").relativeTo(getClass());
+        return Karate.run("examplePostRequest").tags("@postExample2").relativeTo(getClass());
     }
 
 }

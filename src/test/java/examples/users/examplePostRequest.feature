@@ -11,3 +11,9 @@ Feature: validate post request
     Examples:
     |url|
     |https://dummy.restapiexample.com/api/v1/create|
+  @postExample2
+  Scenario: reading data from java class
+    Then def reusable = Java.type('src/test/java/Reader.java')
+    Then def sumValue = reusable.sum(10,10)
+    And print sumValue
+
