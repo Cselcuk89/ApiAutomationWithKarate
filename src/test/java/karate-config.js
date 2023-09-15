@@ -6,6 +6,12 @@ function fn() {
   }
   var config = {
     env: env,
+    fnameVal: "Cagri",
+    lnameVal: "Selcuk",
+    idVal: 100,
+    isManager: false,
+
+
     myVarName: 'someValue'
   }
   if (env == 'dev') {
